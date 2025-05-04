@@ -1,0 +1,4 @@
+/* .bg-lacivert adında bir sınıf tanımladım bunu cv.html de header kısmında kullanacağım*/
+.bg-lacivert {
+    background-color: #001f3f; /* Lacivert rengi için bir sınıf oluşturdum */
+}
