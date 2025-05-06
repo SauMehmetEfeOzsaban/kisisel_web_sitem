@@ -2,3 +2,7 @@
 .bg-lacivert {
     background-color: #001f3f; /* Lacivert rengi için bir sınıf oluşturdum */
 }
+
+.bg-kahverengi{
+    background-color: rgb(94, 10, 10);   /* kahverengi için bir sınıf oluşturdum*/
+}
