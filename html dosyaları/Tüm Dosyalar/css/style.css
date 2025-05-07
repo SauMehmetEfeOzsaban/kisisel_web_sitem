@@ -6,3 +6,12 @@
 .bg-kahverengi{
     background-color: rgb(94, 10, 10);   /* kahverengi için bir sınıf oluşturdum*/
 }
+.bg-denizmavisi{
+    background-color: rgb(46, 111, 121);
+}
+.bg-koyuyesil{
+    background-color: rgb(17, 63, 17);
+}
+.bg-miras{
+    background-color: chocolate;
+}
