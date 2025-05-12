@@ -15,3 +15,7 @@
 .bg-miras{
     background-color: chocolate;
 }
+#futbolLogo {
+  width: 100px;  /* Genişlik ayarı */
+  height: 100px;  /* Yüksekliği otomatik yapar, orantıyı korur */
+}
