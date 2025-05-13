@@ -19,3 +19,6 @@
   width: 100px;  /* Genişlik ayarı */
   height: 100px;  /* Yüksekliği otomatik yapar, orantıyı korur */
 }
+.bg-divbackcolor{
+    background-color: dodgerblue;
+}
