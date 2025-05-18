@@ -4,54 +4,54 @@
   <meta charset="UTF-8">
   <title>İlgi Alanlarım</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css"> <!-- Stil dosyan buraya -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Stil dosyam  -->
 </head>
 <body>
-  <header class="bg-lacivert text-white text-center py-5">
-        <h1>İlgi Alanlarım</h1>
-        <p class="lead">Futbol ,Basketbol ,Tarihi Yerler</p>
-      </header>
- 
-  <div class="container my-5">
 
-  
+  <!-- header bölümünde sayfamın başlığını yazdım-->
+  <header class="bg-lacivert text-white text-center py-5">
+    <h1>İlgi Alanlarım</h1>
+    <p class="lead">Futbol ,Basketbol ,Tarihi Yerler</p>
+  </header>
+
+  <div class="container my-5"> <!-- containerla sayfayı ortaladım ve my-5 ile alttan üstten margin yaptım-->
     
-  
-<h2 class="mt-5">⚽ Futbol</h2>
+    <!-- FUTBOL -->
+    <h2 class="mt-5">⚽ Futbol</h2> <!-- üstten margin verdim-->
     <br>
     <p class="text-center">Öncelikle Futbol ile başlayım, benim tuttuğum takım <strong>Beşiktaş.</strong> Beşiktaş'ı çok seviyorum.</p>
- <p class="text-center">Beşiktaş'ın maçlarını her hafta izlerim, kaçırmam. Ayrıca sık sık Tüpraş Stadyumu’na gidip maçları oradan da takip etmeye çalışırım. <strong>Los Angeles Lakers</strong>.</p>
- <p class="text-center">Dediğim gibi Beşiktaş benim için bir tutku ve zevk. Beşiktaş ile ilgili ayrıntılı bilgiye soldan ulaşabilirsiniz.</p>
-<br>
-    <div id="futbol" class="text-center container" style="margin-left: 400px; margin-top: -20px;"></div>
+    <p class="text-center">Beşiktaş'ın maçlarını her hafta izlerim, kaçırmam. Ayrıca sık sık Tüpraş Stadyumu’na gidip maçları oradan da takip etmeye çalışırım. <strong>Los Angeles Lakers</strong>.</p>
+    <p class="text-center">Dediğim gibi Beşiktaş benim için bir tutku ve zevk. Beşiktaş ile ilgili ayrıntılı bilgiye soldan ulaşabilirsiniz.</p>
+    <br>
+    <!-- API'den gelen futbol kartı buraya yerleşiyor -->
+    <div class="row justify-content-center">
+      <div id="futbol" class="col-md-6 col-sm-12 text-center"></div>
+    </div>
 
-   
-  </div>
-
-
-
-> <h2 class="mt-5">🏀 Basketbol</h2>
+    <!-- BASKETBOL -->
+    <h2 class="mt-5">🏀 Basketbol</h2>
     <br>
     <p class="text-center">Basketbol hem izlemeyi hem de oynamayı sevdiğim bir spor.</p>
- <p class="text-center">Bir farklılık olması açısından dünyaca ünlü Amerikan basketbol ligi olan NBA'i de takip ediyorum. Orada tuttuğum takım <strong>Los Angeles Lakers</strong>.</p>
- <p class="text-center">Lakers'ın maçları gece yarısı olsa da izlemeye çalışırım. İzleyemesem de özetlerini mutlaka izlerim.</p>
-<br>
-    <div id="basketbol" class="text-center container" style="margin-left: 400px; margin-top: -20px;"></div>
+    <p class="text-center">Bir farklılık olması açısından dünyaca ünlü Amerikan basketbol ligi olan NBA'i de takip ediyorum. Orada tuttuğum takım <strong>Los Angeles Lakers</strong>.</p>
+    <p class="text-center">Lakers'ın maçları gece yarısı olsa da izlemeye çalışırım. İzleyemesem de özetlerini mutlaka izlerim.</p>
+    <br>
+    <!-- API'den gelen basketbol kartı buraya yerleşiyor -->
+    <div class="row justify-content-center">
+      <div id="basketbol" class="col-md-6 col-sm-12 text-center"></div>
+    </div>
 
-   
-  </div>
- 
-
+    <!-- TARİHSEL GEZİLER -->
     <h2 class="mt-5">🏛️ Tarihsel Geziler</h2>
     <br>
     <p class="text-center">Biraz da Tarihsel yerler ile ilgili merakımdan bahsediyim açıkçası burda tarihsel yerler derken elbette buraları gezmeyi severim</p>
- <p class="text-center">ancak burda bahsetmek istediğim genel olarak tarih dinlemek tarih okumak tan hoşlanırım.Tarih anlamında bilgilenmek bana iyi geliyor</p>
- <p class="text-center">Özellikle Türk tarihi atalarımızın yaptıkları beni gururlandırır ve ilgimi çeker.</p>
- <p class="text-center">Burada en çok ilgimi çeken kısım ise İnkilap ve ATATÜRK tarihi'dir.</p>
-    <div id="gezi" class="row"></div>
-   
+    <p class="text-center">ancak burda bahsetmek istediğim genel olarak tarih dinlemek tarih okumak tan hoşlanırım.Tarih anlamında bilgilenmek bana iyi geliyor</p>
+    <p class="text-center">Özellikle Türk tarihi atalarımızın yaptıkları beni gururlandırır ve ilgimi çeker.</p>
+    <p class="text-center">Burada en çok ilgimi çeken kısım ise İnkilap ve ATATÜRK tarihi'dir.</p>
+    <!-- API'den gelen tarihsel kartlar buraya yerleşiyor -->
+    <div class="row justify-content-center" id="gezi"></div>
+
   </div>
 
-   <script src="ilgialanlarim.js"></script> <!-- JavaScript dosyası -->
+  <script src="ilgialanlarim.js"></script> <!-- JavaScript dosyası -->
 </body>
 </html>

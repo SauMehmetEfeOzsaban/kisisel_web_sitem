@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Harici CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="iletisim-body"> <!-- Bu class sadece iletisim sayfasını etkiler -->
+
+  <div class="container mt-5 mb-5 iletisim-container">
+    <h2 class="text-center mb-4">İletişim Formu</h2>
+    <form id="iletisimFormu" class="iletisim-form" action="form-sonuc.php" method="post">
+
+      <!-- Ad Soyad -->
+      <div class="mb-3">
+        <label for="adsoyad" class="form-label">Ad Soyad:</label>
+        <input type="text" class="form-control" id="adsoyad" name="adsoyad" placeholder="Ad Soyad">
+      </div>
+
+      <!-- E-posta -->
+      <div class="mb-3">
+        <label for="email" class="form-label">E-posta:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="email">
+      </div>
+
+      <!-- Telefon -->
+      <div class="mb-3">
+        <label for="telefon" class="form-label">Telefon:</label>
+        <input type="text" class="form-control" id="telefon" name="telefon" placeholder="Tel No">
+      </div>
+
+      <!-- Cinsiyet -->
+      <div class="mb-3">
+        <label class="form-label d-block">Cinsiyet:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek">
+          <label class="form-check-label" for="erkek">Erkek</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="Kadın">
+          <label class="form-check-label" for="kadin">Kadın</label>
+        </div>
+      </div>
+
+      <!-- İlgi Alanları -->
+      <div class="mb-3">
+        <label class="form-label d-block">İlgi Alanlarınız:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi[]" value="Spor" id="spor">
+          <label class="form-check-label" for="spor">Spor</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi[]" value="Müzik" id="muzik">
+          <label class="form-check-label" for="muzik">Müzik</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="ilgi[]" value="Kitap" id="kitap">
+          <label class="form-check-label" for="kitap">Kitap</label>
+        </div>
+      </div>
+
+      <!-- Şehir Seçimi -->
+      <div class="mb-3">
+        <label for="sehir" class="form-label">Şehir:</label>
+        <select class="form-select" id="sehir" name="sehir">
+          <option value="">Şehir Seçiniz</option>
+          <option value="Tekirdağ">Tekirdağ</option>
+          <option value="İstanbul">İstanbul</option>
+          <option value="Ankara">Ankara</option>
+          <option value="İzmir">İzmir</option>
+        </select>
+      </div>
+
+      <!-- Mesaj -->
+      <div class="mb-3">
+        <label for="mesaj" class="form-label">Mesajınız:</label>
+        <textarea class="form-control" id="mesaj" name="mesaj" rows="4" placeholder="Fikirlerinizi veya Mesajlarınızı buraya yazınız..."></textarea>
+      </div>
+
+      <!-- Butonlar -->
+      <div class="d-flex justify-content-between flex-wrap gap-2">
+        <button type="button" class="btn btn-primary" id="gonderBtn">Gönder</button>
+        <button type="reset" class="btn btn-secondary">Temizle</button>
+        <button type="button" class="btn btn-warning" id="kontrolBtn">Kontrol Et</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/formKontrol.js"></script>
+</body>
+</html>

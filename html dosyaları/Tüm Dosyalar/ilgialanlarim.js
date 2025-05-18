@@ -40,52 +40,59 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
+  //Beşiktaş için Türkçe Wikipedia'dan özet veriyi alıyorum
+fetch("https://tr.wikipedia.org/api/rest_v1/page/summary/Beşiktaş_J.K.")
+  .then(response => response.json())   // Gelen yanıtı JSON formatına çeviriyorum
+  .then(data => {    // Veriyi aldıktan sonra ekrana bastırmak için kullanıyorum
+     // "futbol" ID'li div'in içeriğini değiştirdim
+     // <!-- Ortalamak için Bootstrap sınıfı -->
+     //  <!-- ve  API'den gelen resmi ekledim -->
+    document.getElementById("futbol").innerHTML = `  
+      <!-- Beşiktaş kartı başlangıç -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <div class="card mb-4 d-flex flex-row align-items-center p-3">
+           
+          <img src="${data.thumbnail.source}" 
+                 class="img-fluid rounded" alt="Beşiktaş Logosu" 
+                 style="max-width: 150px; margin-right: 20px;">
+            <div>
+              <h5 class="card-title">${data.title}</h5>
+              <p class="card-text">${data.extract}</p>
+              <a href="${data.content_urls.desktop.page}" target="_blank" class="btn btn-dark btn-sm">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    `;
+  });
 
-  // Beşiktaş Futbol Takımı Bilgisi
-  // Beşiktaş ile ilgili bilgileri apiden aldım ve sonrasında bilgileri işledim ,(data extract=genel bilgi kısmı,title=başlık)
-  fetch('https://tr.wikipedia.org/api/rest_v1/page/summary/Beşiktaş_J.K.')
-    .then(response => response.json())
-    .then(data => {
-      var besiktasHTML = "<div class='col-md-4'>";
-      besiktasHTML += "<div class='card mb-3'>";
-      if (data.thumbnail && data.thumbnail.source) {
-        besiktasHTML += "<img src='" + data.thumbnail.source + "' class='card-img-top' alt='Beşiktaş' style='width: 300px; height: 300px;'>";
-      }
-      besiktasHTML += "<div class='card-body'>";
-      besiktasHTML += "<h5 class='card-title'>Beşiktaş</h5>";
-      besiktasHTML += "<p>" + data.extract + "</p>";
-      besiktasHTML += "<a href='" + data.content_urls.desktop.page + "' target='_blank' class='btn btn-primary'>Devamını Oku</a>";
-      besiktasHTML += "</div></div></div>";
 
-      // bilgileri html sayfama aktardım
-      document.getElementById("futbol").innerHTML = besiktasHTML;
-    })
-    //eğer bir hata oluşusa mesaj verdim
-    .catch(error => console.error("Hata oluştu:", error));
-
-  // Los Angeles Lakers Basketbol Takımı Bilgisi
-// bilgilerimi Wikipedia API'den alıyorum
-fetch('https://tr.wikipedia.org/api/rest_v1/page/summary/Los_Angeles_Lakers') // İngilizce sayfa adı kullanılır
-  .then(response => response.json()) // gelen cevabı JSON formatına çeviriyorum
+// BASKETBOL KISMI (Lakers) API KARTI
+// Lakers için Türkçe Wikipedia'dan özet veriyi alıyorum
+fetch("https://tr.wikipedia.org/api/rest_v1/page/summary/Los_Angeles_Lakers")
+  .then(response => response.json())  // Gelen yanıtı JSON formatına çeviriyorum
+    // Veriyi aldıktan sonra ekrana bastırmak için kullanıyorum
   .then(data => {
-    // gelen verileri işliyorum (data.extract = genel bilgi kısmı, data.title = başlık)
-    var lakersHTML = "<div class='col-md-4'>"; // sütun yapısı için Bootstrap kullanıyorum
-    lakersHTML += "<div class='card mb-3'>"; // kart görünümü için card div'i başlatıyorum
-
-    // Eğer görsel varsa, resmi karta ekliyorum
-    if (data.thumbnail && data.thumbnail.source) {
-      lakersHTML += "<img src='" + data.thumbnail.source + "' class='card-img-top' alt='Los Angeles Lakers' style='width: 300px; height: 300px;'>";
-    }
-
-    lakersHTML += "<div class='card-body'>"; // kart içeriğini başlatıyorum
-    lakersHTML += "<h5 class='card-title'>" + data.title + "</h5>"; // başlığı ekliyorum
-    lakersHTML += "<p>" + data.extract + "</p>"; // kısa açıklamayı ekliyorum
-    lakersHTML += "<a href='" + data.content_urls.desktop.page + "' target='_blank' class='btn btn-primary'>Devamını Oku</a>"; // Wikipedia sayfasına bağlantı
-    lakersHTML += "</div></div></div>"; // tüm divleri kapatıyorum
-
-    // html dosyamdaki 'basketbol' id'li bölüme bu içeriği gönderiyorum
-    document.getElementById("basketbol").innerHTML = lakersHTML;
-  })
-  .catch(error => console.error("Los Angeles Lakers bilgisi alınırken hata oluştu:", error)); // hata varsa konsola yazdır
-   
+    // kartı ortalamk için bootsrapt kullandım ve apiden gelen resmi eklettirdim
+    document.getElementById("basketbol").innerHTML = `
+      <!-- Lakers kartı başlangıç -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <div class="card mb-4 d-flex flex-row align-items-center p-3">
+            <img src="${data.thumbnail.source}" 
+                 class="img-fluid rounded" alt="Lakers Logosu" 
+                 style="max-width: 150px; margin-right: 20px;">
+            <div>
+              <h5 class="card-title">${data.title}</h5>
+              <p class="card-text">${data.extract}</p>
+              <a href="${data.content_urls.desktop.page}" target="_blank" class="btn btn-warning btn-sm">Devamını Oku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    `;
+  });
 });

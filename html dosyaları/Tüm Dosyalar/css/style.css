@@ -22,3 +22,76 @@
 .bg-divbackcolor{
     background-color: dodgerblue;
 }
+/* Sayfa arka planı ve genel düzen */
+.iletisim-body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form alanı kutusu */
+.iletisim-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form başlığı */
+.iletisim-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Etiket stilleri */
+.iletisim-form .form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Input, Select ve Textarea genel görünüm */
+.iletisim-form .form-control,
+.iletisim-form .form-select {
+    border-radius: 10px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.iletisim-form .form-control:focus,
+.iletisim-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+/* Checkbox ve Radio düzeni */
+.iletisim-form .form-check-input {
+    margin-top: 5px;
+}
+
+/* Butonlar */
+.iletisim-form .btn {
+    width: 48%;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.iletisim-form .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.iletisim-form .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.iletisim-form .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: black;
+}
+
+/* Buton hover efekti */
+.iletisim-form .btn:hover {
+    opacity: 0.9;
+}
