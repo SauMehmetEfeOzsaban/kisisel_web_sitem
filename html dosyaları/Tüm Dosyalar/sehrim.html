@@ -12,6 +12,50 @@
   
 </head>
 <body>
+  <!-- Navbar -->
+<!-- Sayfanın en üstüne sabitlenen koyu temalı navbar  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+  
+    <!-- Sol üstte görünen yazı (logon gibi) - tıklanınca ana sayfaya gider -->
+    <a class="navbar-brand" href="index.html">🌍 Ana Sayfa</a>
+    
+    <!-- Küçük ekranlarda (mobilde) hamburger menü ikonu çıkar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Menü kısmı burası - linkler burada yer alıyor -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+    
+      <!-- Menüleri sağa yaslamak için ms-auto kullandım -->
+      <ul class="navbar-nav ms-auto">
+      
+        <!-- Menüdeki her bir sayfa linki burada bir <li> olarak yer alıyor -->
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a> <!-- Özgeçmiş sayfasına gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sehrim.html">Şehrim</a> <!-- Memleket tanıtımı -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mirasimiz.html">Mirasımız</a> <!-- Kültürel miras sayfası -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a> <!-- İlgi Alanlarım olan sayfa -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a> <!-- İletişim formuna gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Giriş Yap</a> <!-- Login sayfasına gider -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <!-- ana başlık kısmını lacivert yapıp yazısını beyaz yaptım-->
   <header class="bg-lacivert text-white text-center py-4 "> <!-- py-4 ile üstte ve altta boşluk bıraktım-->
@@ -49,7 +93,7 @@
         </div>
       </section>
 
-<section class="container my-6">
+<section class="container my-5"> <!--- üstten ve alttan my-5 ile boşluk-->
         <div class="row">
           
             <div class="col-md-6">
@@ -108,10 +152,63 @@
         
       </section>
 
+        
         <br>
-        <br>
+<div class="d-flex justify-content-center"> <!-- hem yatay hem dikeyde hizalar-->
+  <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> <!--carousel slide gibi davranmayı sağlar -->
+    <div class="carousel-inner">
 
-  
+      <div class="carousel-item active"> <!-- sayfa açıldığı gibi başlar-->
+        <a href="rakoczi.html" target="_blank">
+          <img src="images/rakoczi.jpg" alt="Rakoczi Müzesi">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="ucmakdere.html" target="_blank">
+          <img src="images/uçmakdere.webp" alt="Uçmakdere">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="tekirdagsahil.html" target="_blank">
+          <img src="images/tekirdagsahil.jpg" alt="Tekirdağ Sahili">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="horafeneri.html" target="_blank">
+          <img src="images/Horafeneri.jpg" alt="Hora Feneri">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="corlukalesi.html" target="_blank">
+          <img src="images/corlukale.jpg" alt="Çorlu Kalesi">
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="fatihcami.html" target="_blank">
+          <img src="images/fatihcami2.jpg" alt="Fatih Cami">
+        </a>
+      </div>
+      
+    </div>
+
+    <!-- Kontrol butonları -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Önceki</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sonraki</span>
+    </button>
+  </div>
+</div>
+<br><br>
         <footer class="bg-dark text-white text-center py-4"> 
             <p>&copy; 2025 Mehmet Efe Özsaban. Tüm Hakları Saklıdır.</p>
         </footer>

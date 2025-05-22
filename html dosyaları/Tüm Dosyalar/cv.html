@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Kendi css stil dosyamı sayfaya dahil ettim -->
 </head>
 <body>
+    <!-- Sayfanın en üstüne sabitlenen koyu temalı navbar başlıyor -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+  
+    <!-- Sol üstte görünen yazı (logon gibi) - tıklanınca ana sayfaya gider -->
+    <a class="navbar-brand" href="index.html">🌍 Ana Sayfa</a>
+    
+    <!-- Küçük ekranlarda (mobilde) hamburger menü ikonu çıkar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Menü kısmı burası - linkler burada yer alıyor -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+    
+      <!-- Menüleri sağa yaslamak için ms-auto kullandım -->
+      <ul class="navbar-nav ms-auto">
+      
+        <!-- Menüdeki her bir sayfa linki burada bir <li> olarak yer alıyor -->
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a> <!-- Özgeçmiş sayfasına gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sehrim.html">Şehrim</a> <!-- Memleket tanıtımı -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mirasimiz.html">Mirasımız</a> <!-- Kültürel miras sayfası -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a> <!-- İlgi Alanlarım olan sayfa -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a> <!-- İletişim formuna gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Giriş Yap</a> <!-- Login sayfasına gider -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- Sayfanın üst kısmı yani sayfanın başlık kısmını header etiketi içinde yazdım -->
       <!-- Yeşil arka plan yaptım, beyaz yazı, ortalanmış içerik, dikey padding -->

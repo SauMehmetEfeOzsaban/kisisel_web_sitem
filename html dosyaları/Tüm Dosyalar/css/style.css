@@ -95,3 +95,64 @@
 .iletisim-form .btn:hover {
     opacity: 0.9;
 }
+
+.carousel-item img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Slider içeriği sabit yükseklikte olsun */
+#slider .carousel-inner {
+  height: 250px;
+}
+
+/* Geçiş animasyonu yumuşak olsun */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.ilgi-alanlarim {
+  background-color: #2e2c2c; /* Sayfa arka planı siyah */
+  color: #fff; /* Tüm yazılar beyaz */
+}
+
+.ilgi-alanlarim header {
+  background-color: #881e38 !important;
+  
+}
+
+.ilgi-alanlarim p,
+.ilgi-alanlarim h1,
+.ilgi-alanlarim h2,
+.ilgi-alanlarim h3,
+.ilgi-alanlarim h4,
+.ilgi-alanlarim h5,
+.ilgi-alanlarim h6 {
+  color: #fff !important;
+}
+
+.ilgi-alanlarim footer {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.ilgi-alanlarim a {
+  color: #00aaff;
+}
+
+.ilgi-alanlarim a:hover {
+  color: #66ccff;
+}
+
+.ilgi-alanlarim .card {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.ilgi-alanlarim .card img {
+  border-radius: 10px;
+}

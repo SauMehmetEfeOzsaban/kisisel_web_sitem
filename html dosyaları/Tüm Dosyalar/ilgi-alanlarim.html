@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>İlgi Alanlarım</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css"> <!-- Stil dosyam  -->
+  <meta charset="UTF-8"> <!-- Türkçe karakter uyumu için charset belirledim -->
+  <title>İlgi Alanlarım</title> <!-- Sekmede gözükecek sayfa başlığı -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap stil dosyasını ekledim -->
+
+  <link rel="stylesheet" href="css/style.css"> <!-- Kendi stil dosyamı ekledim -->
 </head>
-<body>
+
+<body class="ilgi-alanlarim"> <!-- Sadece bu sayfaya özel stiller uygulansın diye özel class verdim -->
+
+<!-- Sayfanın en üstüne sabitlenen koyu temalı navbar başlıyor -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+  
+    <!-- Sol üstte görünen yazı (logon gibi) - tıklanınca ana sayfaya gider -->
+    <a class="navbar-brand" href="index.html">🌍 Ana Sayfa</a>
+    
+    <!-- Küçük ekranlarda (mobilde) hamburger menü ikonu çıkar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Menü kısmı burası - linkler burada yer alıyor -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+    
+      <!-- Menüleri sağa yaslamak için ms-auto kullandım -->
+      <ul class="navbar-nav ms-auto">
+      
+        <!-- Menüdeki her bir sayfa linki burada bir <li> olarak yer alıyor -->
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a> <!-- Özgeçmiş sayfasına gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sehrim.html">Şehrim</a> <!-- Memleket tanıtımı -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mirasimiz.html">Mirasımız</a> <!-- Kültürel miras sayfası -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a> <!--İlgi Alanlarım olan sayfa -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a> <!-- İletişim formuna gider -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Giriş Yap</a> <!-- Login sayfasına gider -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <!-- header bölümünde sayfamın başlığını yazdım-->
   <header class="bg-lacivert text-white text-center py-5">
@@ -14,44 +60,54 @@
     <p class="lead">Futbol ,Basketbol ,Tarihi Yerler</p>
   </header>
 
-  <div class="container my-5"> <!-- containerla sayfayı ortaladım ve my-5 ile alttan üstten margin yaptım-->
+  <!-- Sayfa içeriğini ortalamak için container kullandım, üstten ve alttan boşluk verdim -->
+
+  <div class="container my-5">
     
-    <!-- FUTBOL -->
-    <h2 class="mt-5">⚽ Futbol</h2> <!-- üstten margin verdim-->
-    <br>
+    <!-- FUTBOL ALANI -->
+    <h2 class="mt-5">⚽ Futbol</h2> <!-- Başlık için üstten margin verdim -->
+    <br> <!-- Boşluk bıraktım -->
     <p class="text-center">Öncelikle Futbol ile başlayım, benim tuttuğum takım <strong>Beşiktaş.</strong> Beşiktaş'ı çok seviyorum.</p>
-    <p class="text-center">Beşiktaş'ın maçlarını her hafta izlerim, kaçırmam. Ayrıca sık sık Tüpraş Stadyumu’na gidip maçları oradan da takip etmeye çalışırım. <strong>Los Angeles Lakers</strong>.</p>
-    <p class="text-center">Dediğim gibi Beşiktaş benim için bir tutku ve zevk. Beşiktaş ile ilgili ayrıntılı bilgiye soldan ulaşabilirsiniz.</p>
-    <br>
+
+    <p class="text-center">Beşiktaş'ın maçlarını her hafta izlerim, kaçırmam. Ayrıca sık sık Tüpraş Stadyumu’na gidip maçları oradan da takip etmeye çalışırım. </p>
+    <p class="text-center">Dediğim gibi Beşiktaş benim için bir tutku ve zevk. Beşiktaş ile ilgili ayrıntılı bilgiye aşağıdan ulaşabilirsiniz.</p>
+    <p class="text-center">Ayrıca İngiltere Premier League ,İspanya La Liga ,İtalya Serie A yı da takip etmeye çalışıyorum.</p>
+    <p class="text-center">Futbolla ilgili de birden fazla oyun oynadım. Bunlar Fifa Serisi ,Pes Serisi ve Football Manager.</p>
+    <br> <!-- Biraz daha boşluk -->
     <!-- API'den gelen futbol kartı buraya yerleşiyor -->
     <div class="row justify-content-center">
-      <div id="futbol" class="col-md-6 col-sm-12 text-center"></div>
+      <div id="futbol" class="col-md-6 col-sm-12 text-center"></div> <!-- Futbol kartları bu div'e eklenecek -->
     </div>
 
-    <!-- BASKETBOL -->
-    <h2 class="mt-5">🏀 Basketbol</h2>
-    <br>
+    <!-- BASKETBOL ALANI -->
+    <h2 class="mt-5">🏀 Basketbol</h2> <!-- Başlık için üstten margin verdim -->
+    <br> <!-- Boşluk verdim -->
     <p class="text-center">Basketbol hem izlemeyi hem de oynamayı sevdiğim bir spor.</p>
     <p class="text-center">Bir farklılık olması açısından dünyaca ünlü Amerikan basketbol ligi olan NBA'i de takip ediyorum. Orada tuttuğum takım <strong>Los Angeles Lakers</strong>.</p>
     <p class="text-center">Lakers'ın maçları gece yarısı olsa da izlemeye çalışırım. İzleyemesem de özetlerini mutlaka izlerim.</p>
-    <br>
+    <br> <!-- Biraz daha boşluk -->
     <!-- API'den gelen basketbol kartı buraya yerleşiyor -->
     <div class="row justify-content-center">
-      <div id="basketbol" class="col-md-6 col-sm-12 text-center"></div>
+      <div id="basketbol" class="col-md-6 col-sm-12 text-center"></div> <!-- Basketbol kartları buraya dinamik olarak eklenecek -->
     </div>
 
-    <!-- TARİHSEL GEZİLER -->
-    <h2 class="mt-5">🏛️ Tarihsel Geziler</h2>
-    <br>
+    <!-- TARİHSEL GEZİLER ALANI -->
+    <h2 class="mt-5">🏛️ Tarihsel Geziler</h2> <!-- Başlık için üstten margin verdim -->
+    <br> <!-- Boşluk verdim -->
     <p class="text-center">Biraz da Tarihsel yerler ile ilgili merakımdan bahsediyim açıkçası burda tarihsel yerler derken elbette buraları gezmeyi severim</p>
-    <p class="text-center">ancak burda bahsetmek istediğim genel olarak tarih dinlemek tarih okumak tan hoşlanırım.Tarih anlamında bilgilenmek bana iyi geliyor</p>
+    <p class="text-center">ancak burda bahsetmek istediğim genel olarak tarih dinlemek tarih okumaktan hoşlanırım. Tarih anlamında bilgilenmek bana iyi geliyor.</p>
     <p class="text-center">Özellikle Türk tarihi atalarımızın yaptıkları beni gururlandırır ve ilgimi çeker.</p>
     <p class="text-center">Burada en çok ilgimi çeken kısım ise İnkilap ve ATATÜRK tarihi'dir.</p>
     <!-- API'den gelen tarihsel kartlar buraya yerleşiyor -->
-    <div class="row justify-content-center" id="gezi"></div>
-
+    <div class="row justify-content-center" id="gezi"></div> <!-- Gezi kartları bu satıra eklenecek -->
   </div>
 
-  <script src="ilgialanlarim.js"></script> <!-- JavaScript dosyası -->
+  <!-- Footer alanı: en alt kısım -->
+  <footer class="bg-dark text-white text-center py-4"> 
+    <p>&copy; 2025 Mehmet Efe Özsaban. Tüm Hakları Saklıdır.</p>
+  </footer>
+
+  <!-- JavaScript dosyamı en sona ekledim çünkü HTML yüklendikten sonra çalışsın -->
+  <script src="ilgialanlarim.js"></script> <!-- API verilerini çekmek için JS dosyam -->
 </body>
 </html>
