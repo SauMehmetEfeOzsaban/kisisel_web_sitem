@@ -4,126 +4,139 @@
 }
 
 .bg-kahverengi{
-    background-color: rgb(94, 10, 10);   /* kahverengi için bir sınıf oluşturdum*/
+    background-color: rgb(94, 10, 10);   /* Kahverengi için renk kodu belirledim */
 }
+
 .bg-denizmavisi{
-    background-color: rgb(46, 111, 121);
+    background-color: rgb(46, 111, 121); /* Deniz mavisi tonunda arka plan rengi */
 }
+
 .bg-koyuyesil{
-    background-color: rgb(17, 63, 17);
+    background-color: rgb(17, 63, 17); /* Koyu yeşil renk, doğal tonlar için */
 }
+
 .bg-miras{
-    background-color: chocolate;
+    background-color: chocolate; /* Çikolata rengi, farklı bir tema için kullandım */
 }
+
 #futbolLogo {
-  width: 100px;  /* Genişlik ayarı */
-  height: 100px;  /* Yüksekliği otomatik yapar, orantıyı korur */
+  width: 100px;  /* Logo genişliği 100 piksel olarak ayarlandı */
+  height: 100px;  /* Yükseklik de 100 piksel, kare orantılı görünür */
 }
+
 .bg-divbackcolor{
-    background-color: dodgerblue;
+    background-color: dodgerblue; /* Mavi tonunda kolayca kullanmak için sınıf */
 }
-/* Sayfa arka planı ve genel düzen */
+
+/* Sayfa arka planı ve yazı font ayarlarını yaptım */
 .iletisim-body {
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Sağdan sola açık renk geçişi */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Okunaklı font ailesi */
 }
 
-/* Form alanı kutusu */
+/* Formu sarmalayan kutu tasarımı, beyaz zemin ve gölge */
 .iletisim-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Formun arka planı beyaz */
+    padding: 30px; /* İç boşluk 30px, rahat görünüm için */
+    border-radius: 20px; /* Kenarlar yuvarlatıldı */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
 }
 
-/* Form başlığı */
+/* Form başlığının font büyüklüğü ve kalınlığı */
 .iletisim-container h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #343a40;
+    font-size: 28px; /* Büyük ve dikkat çekici başlık */
+    font-weight: bold; /* Kalın yazı */
+    color: #343a40; /* Koyu gri tonunda renk */
 }
 
-/* Etiket stilleri */
+/* Formdaki etiketlerin (label) yazı stili */
 .iletisim-form .form-label {
-    font-weight: 500;
-    color: #495057;
+    font-weight: 500; /* Orta kalınlıkta yazı */
+    color: #495057; /* Açık koyu gri renk */
 }
 
-/* Input, Select ve Textarea genel görünüm */
+/* Input ve select kutularına genel görünüm ayarı */
 .iletisim-form .form-control,
 .iletisim-form .form-select {
-    border-radius: 10px;
-    transition: border 0.3s, box-shadow 0.3s;
+    border-radius: 10px; /* Kutu köşeleri yuvarlak */
+    transition: border 0.3s, box-shadow 0.3s; /* Geçiş efektleri */
 }
 
+/* Focus olduğunda (tıklanınca) kutu kenarına mavi renk ve gölge */
 .iletisim-form .form-control:focus,
 .iletisim-form .form-select:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+    border-color: #0d6efd; /* Mavi kenar */
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5); /* Hafif mavi gölge */
 }
 
-/* Checkbox ve Radio düzeni */
+/* Checkbox ve radio button inputları için üst boşluk ayarı */
 .iletisim-form .form-check-input {
-    margin-top: 5px;
+    margin-top: 5px; /* Yukarıdan biraz boşluk bıraktım */
 }
 
-/* Butonlar */
+/* Formdaki butonların genel genişlik ve iç boşluğu */
 .iletisim-form .btn {
-    width: 48%;
-    padding: 10px;
-    font-weight: 600;
-    border-radius: 10px;
+    width: 48%; /* İki buton yan yana sığsın diye genişlik yarıya yakın */
+    padding: 10px; /* Buton içi boşluk */
+    font-weight: 600; /* Yarı kalın yazı */
+    border-radius: 10px; /* Buton köşeleri yuvarlatıldı */
 }
 
+/* Mavi butonun rengi ve sınırı */
 .iletisim-form .btn-primary {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #0d6efd; /* Bootstrap ana mavi rengi */
+    border-color: #0d6efd; /* Sınırı da mavi */
 }
 
+/* Gri renkteki ikinci butonun renkleri */
 .iletisim-form .btn-secondary {
-    background-color: #6c757d;
+    background-color: #6c757d; /* Orta koyulukta gri ton */
     border-color: #6c757d;
 }
 
+/* Sarı butonun renk ayarları */
 .iletisim-form .btn-warning {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Bootstrap uyarı sarısı */
     border-color: #ffc107;
-    color: black;
+    color: black; /* Siyah yazı */
 }
 
-/* Buton hover efekti */
+/* Buton üzerine gelince saydamlık efekti */
 .iletisim-form .btn:hover {
-    opacity: 0.9;
+    opacity: 0.9; /* Hafif şeffaflık */
 }
 
+/* Carousel (slider) içindeki resim genişlik ve yükseklik ayarı */
 .carousel-item img {
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  width: 300px; /* Sabit genişlik */
+  height: 250px; /* Sabit yükseklik */
+  object-fit: cover; /* Resim kırpılmadan kutuya sığar */
+  display: block; /* Blok olarak göster */
+  margin: 0 auto; /* Ortala */
 }
 
-/* Slider içeriği sabit yükseklikte olsun */
+/* Slider içeriğinin yüksekliği sabit */
 #slider .carousel-inner {
-  height: 250px;
+  height: 250px; /* Slider yüksekliği */
 }
 
-/* Geçiş animasyonu yumuşak olsun */
+/* Slider geçiş animasyonu için yumuşak hareket */
 .carousel-item {
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out; /* 0.6 saniye geçiş */
 }
 
+/* İlgi alanlarım sayfasının genel arka plan ve yazı rengi */
 .ilgi-alanlarim {
-  background-color: #2e2c2c; /* Sayfa arka planı siyah */
-  color: #fff; /* Tüm yazılar beyaz */
+  background-color: #2e2c2c; /* Koyu gri-siyah arka plan */
+  color: #fff; /* Yazılar beyaz */
 }
 
+/* İlgi alanlarım sayfasının header arka plan rengi */
 .ilgi-alanlarim header {
-  background-color: #881e38 !important;
-  
+  background-color: #881e38 !important; /* Özel kırmızı tonu, önemli !important ile */
 }
 
+/* İlgi alanlarım sayfasındaki başlık ve paragrafların renk ayarları */
 .ilgi-alanlarim p,
 .ilgi-alanlarim h1,
 .ilgi-alanlarim h2,
@@ -131,28 +144,33 @@
 .ilgi-alanlarim h4,
 .ilgi-alanlarim h5,
 .ilgi-alanlarim h6 {
-  color: #fff !important;
+  color: #fff !important; /* Tüm yazılar beyaz */
 }
 
+/* İlgi alanlarım footer arka plan ve yazı rengi */
 .ilgi-alanlarim footer {
-  background-color: #111 !important;
-  color: #fff !important;
+  background-color: #111 !important; /* Çok koyu arka plan */
+  color: #fff !important; /* Yazılar beyaz */
 }
 
+/* İlgi alanlarım sayfasındaki linklerin rengi */
 .ilgi-alanlarim a {
-  color: #00aaff;
+  color: #00aaff; /* Açık mavi link rengi */
 }
 
+/* Link üzerine gelince renk değişimi */
 .ilgi-alanlarim a:hover {
-  color: #66ccff;
+  color: #66ccff; /* Daha açık mavi olur */
 }
 
+/* İlgi alanlarım sayfasındaki kartların arka plan ve sınırları */
 .ilgi-alanlarim .card {
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
+  background-color: #1a1a1a; /* Koyu kart arka planı */
+  color: #fff; /* Kart içindeki yazılar beyaz */
+  border: 1px solid #333; /* İnce sınır */
 }
 
+/* Kart içindeki resimlerin köşe yuvarlama */
 .ilgi-alanlarim .card img {
-  border-radius: 10px;
+  border-radius: 10px; /* Resimler yumuşak köşeli */
 }
